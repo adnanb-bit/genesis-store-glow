@@ -120,7 +120,7 @@ export default function Index() {
                     <span className="text-primary-foreground font-bold">1</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">All Materials Included</h4>
+                    <h3 className="font-semibold mb-1">All Materials Included</h3>
                     <p className="text-muted-foreground text-sm">
                       Quality supplies, brushes, paints, and everything you need to complete your project.
                     </p>
@@ -132,7 +132,7 @@ export default function Index() {
                     <span className="text-secondary-foreground font-bold">2</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Printed Tutorial Guide</h4>
+                    <h3 className="font-semibold mb-1">Printed Tutorial Guide</h3>
                     <p className="text-muted-foreground text-sm">
                       Step-by-step instructions with helpful tips and techniques.
                     </p>
@@ -144,7 +144,7 @@ export default function Index() {
                     <Play className="h-5 w-5 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Video Tutorial Access</h4>
+                    <h3 className="font-semibold mb-1">Video Tutorial Access</h3>
                     <p className="text-muted-foreground text-sm">
                       Follow along with our detailed video guides at your own pace.
                     </p>
@@ -156,7 +156,7 @@ export default function Index() {
                     <Heart className="h-5 w-5 text-secondary-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Support & Community</h4>
+                    <h3 className="font-semibold mb-1">Support & Community</h3>
                     <p className="text-muted-foreground text-sm">
                       Join our community of creators and share your finished pieces!
                     </p>
