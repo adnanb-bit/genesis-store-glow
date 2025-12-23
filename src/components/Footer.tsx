@@ -18,7 +18,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
+            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/shop" className="text-background/80 hover:text-primary transition-colors">
@@ -45,7 +45,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Connect</h4>
+            <h3 className="font-semibold text-lg mb-4">Connect</h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-background/80">
                 <Instagram className="h-4 w-4" />
