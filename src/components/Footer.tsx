@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Mail, MapPin } from "lucide-react";
+import bulbulLogo from "@/assets/bulbul-logo.svg";
 
 export function Footer() {
   return (
@@ -8,12 +9,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <h3 className="font-display text-3xl mb-4">BulBul</h3>
+            <img src={bulbulLogo} alt="BulBul" className="h-20 mb-4" />
             <p className="text-background/80 mb-4 max-w-md">
-              Make it, love it. Discover the joy of creating beautiful art with our curated DIY kits.
+              Discover the joy of creating beautiful art with our curated DIY kits.
               Each kit comes with everything you need plus video tutorials to guide you.
             </p>
-            <p className="font-display text-xl text-primary">make it love it</p>
           </div>
 
           {/* Quick Links */}

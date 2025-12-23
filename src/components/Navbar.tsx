@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { ShoppingCart, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { useCartStore } from "@/stores/cartStore";
 import { CartDrawer } from "./CartDrawer";
+import bulbulLogo from "@/assets/bulbul-logo.svg";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -25,8 +25,8 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <span className="font-display text-2xl text-primary">BulBul</span>
+          <Link to="/" className="flex items-center">
+            <img src={bulbulLogo} alt="BulBul" className="h-12" />
           </Link>
 
           {/* Desktop Navigation */}
