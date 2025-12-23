@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <img src={bulbulLogo} alt="BulBul" className="h-40 mb-4" />
+            <img src={bulbulLogo} alt="BulBul" className="h-48 mb-4" />
             <p className="text-background/80 mb-4 max-w-md">
               Discover the joy of creating beautiful art with our curated DIY kits.
               Each kit comes with everything you need plus video tutorials to guide you.
