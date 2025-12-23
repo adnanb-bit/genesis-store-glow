@@ -22,10 +22,10 @@
     --popover-foreground: 20 30% 20%;
 
     --primary: 10 70% 50%; /* Coral red */
-    --primary-foreground: 30 33% 96%;
+    --primary-foreground: 0 0% 100%; /* Pure white for better contrast */
 
     --secondary: 25 60% 55%; /* Burnt orange */
-    --secondary-foreground: 30 33% 96%;
+    --secondary-foreground: 20 30% 10%; /* Dark chocolate for better contrast */
 
     --muted: 25 30% 90%; /* Soft peach */
     --muted-foreground: 20 20% 40%;
