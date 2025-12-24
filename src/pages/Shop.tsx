@@ -32,7 +32,7 @@ export default function Shop() {
         {/* Hero */}
         <section className="bg-gradient-to-br from-peach/30 to-background py-12 md:py-16">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-display text-4xl md:text-5xl text-primary mb-4">
+            <h1 className="font-heading font-extrabold text-4xl md:text-5xl text-primary mb-4">
               Shop DIY Kits
             </h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -57,7 +57,7 @@ export default function Shop() {
             ) : (
               <div className="text-center py-20 bg-muted/30 rounded-2xl">
                 <Palette className="h-20 w-20 text-muted-foreground mx-auto mb-6" />
-                <h2 className="text-2xl font-semibold mb-3">No products found</h2>
+                <h2 className="font-heading font-extrabold text-2xl mb-3">No products found</h2>
                 <p className="text-muted-foreground max-w-md mx-auto">
                   We're working on adding amazing DIY kits. Tell us what products you'd like to create!
                 </p>

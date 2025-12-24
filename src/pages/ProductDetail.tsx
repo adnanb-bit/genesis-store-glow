@@ -51,7 +51,7 @@ export default function ProductDetail() {
         <Navbar />
         <main className="flex-1 flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-2xl font-semibold mb-4">Product not found</h1>
+            <h1 className="font-heading font-extrabold text-2xl mb-4">Product not found</h1>
             <Button asChild>
               <Link to="/shop">
                 <ArrowLeft className="mr-2 h-4 w-4" /> Back to Shop
@@ -138,7 +138,7 @@ export default function ProductDetail() {
 
             {/* Product Info */}
             <div>
-              <h1 className="font-display text-3xl md:text-4xl text-foreground mb-4">
+              <h1 className="font-heading font-extrabold text-3xl md:text-4xl text-foreground mb-4">
                 {product.title}
               </h1>
 
@@ -222,7 +222,7 @@ export default function ProductDetail() {
 
               {/* What's Included */}
               <div className="bg-muted/50 rounded-xl p-6">
-                <h3 className="font-semibold text-lg mb-4">What's Included</h3>
+                <h3 className="font-heading font-extrabold text-lg mb-4">What's Included</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-3 text-muted-foreground">
                     <Package className="h-5 w-5 text-primary" />
