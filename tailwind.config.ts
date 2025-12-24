@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ["Pacifico", "cursive"],
-        heading: ["Patrick Hand", "cursive"],
+        heading: ["Akaya Telivigala", "cursive"],
         body: ["Nunito", "sans-serif"],
       },
       colors: {

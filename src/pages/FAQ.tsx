@@ -82,7 +82,7 @@ export default function FAQ() {
                     value={`item-${index}`}
                     className="bg-card border border-border rounded-xl px-6"
                   >
-                    <AccordionTrigger className="text-left font-semibold hover:text-primary">
+                    <AccordionTrigger className="text-left font-heading text-lg hover:text-primary">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
@@ -98,7 +98,7 @@ export default function FAQ() {
         {/* Contact CTA */}
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl text-foreground mb-4">
               Still Have Questions?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
