@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ["Pacifico", "cursive"],
-        heading: ["Delius Swash Caps", "cursive"],
+        heading: ["Akaya Telivigala", "cursive"],
         body: ["Nunito", "sans-serif"],
       },
       colors: {
