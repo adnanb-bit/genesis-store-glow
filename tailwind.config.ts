@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ["Pacifico", "cursive"],
+        heading: ["Patrick Hand", "cursive"],
         body: ["Nunito", "sans-serif"],
       },
       colors: {
