@@ -117,4 +117,10 @@
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
   }
+
+  /* Synthetic extra-bold for fonts with single weight */
+  .text-stroke-bold {
+    -webkit-text-stroke: 0.5px currentColor;
+    paint-order: stroke fill;
+  }
 }

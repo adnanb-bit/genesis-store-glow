@@ -65,7 +65,7 @@ export default function Index() {
         {/* Why DIY Section */}
         <section className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="font-heading font-extrabold text-3xl md:text-4xl text-center text-foreground mb-12">
+            <h2 className="font-heading font-extrabold text-stroke-bold text-3xl md:text-4xl text-center text-foreground mb-12">
               Why DIY with BulBul?
             </h2>
 
@@ -74,7 +74,7 @@ export default function Index() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Palette className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="font-heading font-extrabold text-xl mb-2">Therapeutic & Fun</h3>
+                <h3 className="font-heading font-extrabold text-stroke-bold text-xl mb-2">Therapeutic & Fun</h3>
                 <p className="text-muted-foreground">
                   Unwind and destress while creating something beautiful with your hands.
                 </p>
@@ -84,7 +84,7 @@ export default function Index() {
                 <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="h-8 w-8 text-secondary" />
                 </div>
-                <h3 className="font-heading font-extrabold text-xl mb-2">Pride in Creating</h3>
+                <h3 className="font-heading font-extrabold text-stroke-bold text-xl mb-2">Pride in Creating</h3>
                 <p className="text-muted-foreground">
                   Experience the joy and satisfaction of making art you'll love.
                 </p>
@@ -94,7 +94,7 @@ export default function Index() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Home className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="font-heading font-extrabold text-xl mb-2">Beautiful Home Decor</h3>
+                <h3 className="font-heading font-extrabold text-stroke-bold text-xl mb-2">Beautiful Home Decor</h3>
                 <p className="text-muted-foreground">
                   Create stunning pieces that add a personal touch to your space.
                 </p>
@@ -107,7 +107,7 @@ export default function Index() {
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-heading font-extrabold text-3xl md:text-4xl text-center text-foreground mb-4">
+              <h2 className="font-heading font-extrabold text-stroke-bold text-3xl md:text-4xl text-center text-foreground mb-4">
                 What's in Every Kit?
               </h2>
               <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -120,7 +120,7 @@ export default function Index() {
                     <span className="text-primary-foreground font-bold">1</span>
                   </div>
                   <div>
-                    <h3 className="font-heading font-extrabold text-lg mb-1">All Materials Included</h3>
+                    <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-1">All Materials Included</h3>
                     <p className="text-muted-foreground text-sm">
                       Quality supplies, brushes, paints, and everything you need to complete your project.
                     </p>
@@ -132,7 +132,7 @@ export default function Index() {
                     <span className="text-secondary-foreground font-bold">2</span>
                   </div>
                   <div>
-                    <h3 className="font-heading font-extrabold text-lg mb-1">Printed Tutorial Guide</h3>
+                    <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-1">Printed Tutorial Guide</h3>
                     <p className="text-muted-foreground text-sm">
                       Step-by-step instructions with helpful tips and techniques.
                     </p>
@@ -144,7 +144,7 @@ export default function Index() {
                     <Play className="h-5 w-5 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-heading font-extrabold text-lg mb-1">Video Tutorial Access</h3>
+                    <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-1">Video Tutorial Access</h3>
                     <p className="text-muted-foreground text-sm">
                       Follow along with our detailed video guides at your own pace.
                     </p>
@@ -156,7 +156,7 @@ export default function Index() {
                     <Heart className="h-5 w-5 text-secondary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-heading font-extrabold text-lg mb-1">Support & Community</h3>
+                    <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-1">Support & Community</h3>
                     <p className="text-muted-foreground text-sm">
                       Join our community of creators and share your finished pieces!
                     </p>
@@ -171,7 +171,7 @@ export default function Index() {
         <section className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between mb-12">
-              <h2 className="font-heading font-extrabold text-3xl md:text-4xl text-foreground">
+              <h2 className="font-heading font-extrabold text-stroke-bold text-3xl md:text-4xl text-foreground">
                 Featured Kits
               </h2>
               <Button asChild variant="outline">
@@ -208,7 +208,7 @@ export default function Index() {
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="font-heading font-extrabold text-3xl md:text-4xl mb-4">
+            <h2 className="font-heading font-extrabold text-stroke-bold text-3xl md:text-4xl mb-4">
               Ready to Start Creating?
             </h2>
             <p className="text-primary-foreground/90 text-lg mb-8 max-w-2xl mx-auto">
