@@ -118,9 +118,11 @@
     @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
   }
 
-  /* Synthetic extra-bold for fonts with single weight */
+  /* Synthetic extra-bold for fonts with single weight (simulated weight: 2500) */
   .text-stroke-bold {
-    -webkit-text-stroke: 0.5px currentColor;
+    font-weight: 1000;
+    -webkit-text-stroke: 0.75px currentColor;
+    text-shadow: 0 0 0.45px currentColor;
     paint-order: stroke fill;
   }
 }
