@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Instagram, Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function Gallery() {
   // Placeholder for user-submitted creations
@@ -73,7 +74,7 @@ export default function Gallery() {
               Pick a kit, follow along with our tutorials, and create art you'll be proud to display.
             </p>
             <Button asChild size="lg">
-              <a href="/shop">Browse Kits</a>
+              <Link to="/shop">Browse Kits</Link>
             </Button>
           </div>
         </section>
