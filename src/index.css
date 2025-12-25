@@ -1,14 +1,5 @@
 /* Fonts loaded in index.html for non-render-blocking performance */
 
-/* Custom Delius Bold font */
-@font-face {
-  font-family: 'Delius Bold';
-  src: url('/fonts/Delius-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -125,13 +116,5 @@
 @layer utilities {
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
-  }
-
-  /* Synthetic extra-bold for fonts with single weight (simulated weight: 2500) */
-  .text-stroke-bold {
-    font-weight: 1000;
-    -webkit-text-stroke: 0.75px currentColor;
-    text-shadow: 0 0 0.45px currentColor;
-    paint-order: stroke fill;
   }
 }

@@ -62,7 +62,7 @@ export default function FAQ() {
         {/* Hero */}
         <section className="bg-gradient-to-br from-peach/30 to-background py-16 md:py-24">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-heading font-extrabold text-stroke-bold text-4xl md:text-6xl text-primary mb-6">
+            <h1 className="font-display text-4xl md:text-6xl text-primary mb-6">
               Frequently Asked Questions
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -82,7 +82,7 @@ export default function FAQ() {
                     value={`item-${index}`}
                     className="bg-card border border-border rounded-xl px-6"
                   >
-                    <AccordionTrigger className="text-left font-heading font-extrabold text-stroke-bold text-lg hover:text-primary">
+                    <AccordionTrigger className="text-left font-semibold hover:text-primary">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
@@ -98,7 +98,7 @@ export default function FAQ() {
         {/* Contact CTA */}
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="font-heading font-extrabold text-stroke-bold text-3xl md:text-4xl text-foreground mb-4">
+            <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
               Still Have Questions?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">

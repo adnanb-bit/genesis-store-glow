@@ -11,7 +11,7 @@ export default function About() {
         {/* Hero */}
         <section className="bg-gradient-to-br from-peach/30 to-background py-16 md:py-24">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="font-heading font-extrabold text-stroke-bold text-4xl md:text-6xl text-primary mb-6">
+            <h1 className="font-display text-4xl md:text-6xl text-primary mb-6">
               Our Story
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -24,7 +24,7 @@ export default function About() {
         <section className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
-              <h2 className="font-heading font-extrabold text-stroke-bold text-3xl text-foreground mb-6 text-center">
+              <h2 className="font-display text-3xl text-foreground mb-6 text-center">
                 Why BulBul?
               </h2>
               <div className="prose prose-lg max-w-none text-muted-foreground space-y-6">
@@ -52,7 +52,7 @@ export default function About() {
         {/* Values */}
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
-            <h2 className="font-heading font-extrabold text-stroke-bold text-3xl md:text-4xl text-center text-foreground mb-12">
+            <h2 className="font-display text-3xl md:text-4xl text-center text-foreground mb-12">
               What We Believe
             </h2>
 
@@ -61,7 +61,7 @@ export default function About() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-2">Made with Love</h3>
+                <h3 className="font-semibold text-lg mb-2">Made with Love</h3>
                 <p className="text-muted-foreground text-sm">
                   Every kit is thoughtfully assembled to bring you joy.
                 </p>
@@ -71,7 +71,7 @@ export default function About() {
                 <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Palette className="h-8 w-8 text-secondary" />
                 </div>
-                <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-2">Creativity for All</h3>
+                <h3 className="font-semibold text-lg mb-2">Creativity for All</h3>
                 <p className="text-muted-foreground text-sm">
                   No experience needed—just enthusiasm and curiosity.
                 </p>
@@ -81,7 +81,7 @@ export default function About() {
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-2">Community</h3>
+                <h3 className="font-semibold text-lg mb-2">Community</h3>
                 <p className="text-muted-foreground text-sm">
                   Join a community of creators who inspire each other.
                 </p>
@@ -91,7 +91,7 @@ export default function About() {
                 <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Sparkles className="h-8 w-8 text-secondary" />
                 </div>
-                <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-2">Quality First</h3>
+                <h3 className="font-semibold text-lg mb-2">Quality First</h3>
                 <p className="text-muted-foreground text-sm">
                   Premium materials for professional-looking results.
                 </p>
@@ -104,7 +104,7 @@ export default function About() {
         <section className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-heading font-extrabold text-stroke-bold text-3xl md:text-4xl text-center text-foreground mb-6">
+              <h2 className="font-display text-3xl md:text-4xl text-center text-foreground mb-6">
                 The Joy of Creating
               </h2>
               <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -113,7 +113,7 @@ export default function About() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-muted/50 rounded-xl p-6">
-                  <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-2">Stress Relief</h3>
+                  <h3 className="font-semibold text-lg mb-2">Stress Relief</h3>
                   <p className="text-muted-foreground">
                     Creating art is meditative. It helps you disconnect from daily stress 
                     and find peace in the present moment.
@@ -121,7 +121,7 @@ export default function About() {
                 </div>
 
                 <div className="bg-muted/50 rounded-xl p-6">
-                  <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-2">Sense of Achievement</h3>
+                  <h3 className="font-semibold text-lg mb-2">Sense of Achievement</h3>
                   <p className="text-muted-foreground">
                     There's nothing quite like the pride of creating something beautiful 
                     with your own hands.
@@ -129,7 +129,7 @@ export default function About() {
                 </div>
 
                 <div className="bg-muted/50 rounded-xl p-6">
-                  <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-2">Screen-Free Time</h3>
+                  <h3 className="font-semibold text-lg mb-2">Screen-Free Time</h3>
                   <p className="text-muted-foreground">
                     Give your eyes and mind a break from screens while engaging 
                     in a fulfilling creative activity.
@@ -137,7 +137,7 @@ export default function About() {
                 </div>
 
                 <div className="bg-muted/50 rounded-xl p-6">
-                  <h3 className="font-heading font-extrabold text-stroke-bold text-lg mb-2">Personal Expression</h3>
+                  <h3 className="font-semibold text-lg mb-2">Personal Expression</h3>
                   <p className="text-muted-foreground">
                     Each piece you create is uniquely yours—a reflection of your 
                     creativity and personal style.
