@@ -15,6 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ["Pacifico", "cursive"],
+        heading: ["Delius", "cursive"],
         body: ["Nunito", "sans-serif"],
       },
       colors: {
