@@ -65,7 +65,7 @@ export default function Index() {
         {/* Why DIY Section */}
         <section className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4">
-            <h2 className="font-display text-3xl md:text-4xl text-center text-foreground mb-12">
+            <h2 className="font-heading text-3xl md:text-4xl text-center text-foreground mb-12">
               Why DIY with BulBul?
             </h2>
 
@@ -107,7 +107,7 @@ export default function Index() {
         <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-display text-3xl md:text-4xl text-center text-foreground mb-4">
+              <h2 className="font-heading text-3xl md:text-4xl text-center text-foreground mb-4">
                 What's in Every Kit?
               </h2>
               <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -171,7 +171,7 @@ export default function Index() {
         <section className="py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between mb-12">
-              <h2 className="font-display text-3xl md:text-4xl text-foreground">
+              <h2 className="font-heading text-3xl md:text-4xl text-foreground">
                 Featured Kits
               </h2>
               <Button asChild variant="outline">
@@ -208,7 +208,7 @@ export default function Index() {
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="font-display text-3xl md:text-4xl mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl mb-4">
               Ready to Start Creating?
             </h2>
             <p className="text-primary-foreground/90 text-lg mb-8 max-w-2xl mx-auto">

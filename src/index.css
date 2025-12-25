@@ -1,5 +1,13 @@
 /* Fonts loaded in index.html for non-render-blocking performance */
 
+@font-face {
+  font-family: 'Delius';
+  src: url('/fonts/Delius-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -109,7 +117,11 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    @apply font-heading;
+  }
+
+  .font-display {
+    font-family: 'Pacifico', cursive;
   }
 }
 
