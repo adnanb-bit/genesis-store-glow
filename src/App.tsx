@@ -23,12 +23,15 @@ const PageLoader = () => (
   </div>
 );
 
+// Only use basename in production for GitHub Pages
+const basename = import.meta.env.PROD ? import.meta.env.BASE_URL : '/';
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <BrowserRouter basename={basename}>
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Index />} />
