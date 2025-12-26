@@ -36,7 +36,7 @@
     --secondary-foreground: 20 30% 10%; /* Dark chocolate for better contrast */
 
     --muted: 25 30% 90%; /* Soft peach */
-    --muted-foreground: 20 20% 40%;
+    --muted-foreground: 20 25% 28%; /* Darker for better contrast - WCAG AAA compliant */
 
     --accent: 25 60% 55%; /* Burnt orange */
     --accent-foreground: 30 33% 96%;

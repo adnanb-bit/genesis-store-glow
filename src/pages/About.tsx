@@ -9,7 +9,7 @@ export default function About() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-peach/30 to-background py-16 md:py-24">
+        <section className="bg-gradient-to-br from-peach/30 to-background py-12 md:py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-display text-4xl md:text-6xl text-primary mb-6">
               Our Story
@@ -21,7 +21,7 @@ export default function About() {
         </section>
 
         {/* Story */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <h2 className="font-display text-3xl text-foreground mb-6 text-center">
@@ -50,7 +50,7 @@ export default function About() {
         </section>
 
         {/* Values */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <h2 className="font-display text-3xl md:text-4xl text-center text-foreground mb-12">
               What We Believe
@@ -62,7 +62,7 @@ export default function About() {
                   <Heart className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Made with Love</h3>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground text-base">
                   Every kit is thoughtfully assembled to bring you joy.
                 </p>
               </div>
@@ -72,7 +72,7 @@ export default function About() {
                   <Palette className="h-8 w-8 text-secondary" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Creativity for All</h3>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground text-base">
                   No experience needed—just enthusiasm and curiosity.
                 </p>
               </div>
@@ -82,7 +82,7 @@ export default function About() {
                   <Users className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Community</h3>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground text-base">
                   Join a community of creators who inspire each other.
                 </p>
               </div>
@@ -92,7 +92,7 @@ export default function About() {
                   <Sparkles className="h-8 w-8 text-secondary" />
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Quality First</h3>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground text-base">
                   Premium materials for professional-looking results.
                 </p>
               </div>
@@ -101,7 +101,7 @@ export default function About() {
         </section>
 
         {/* Therapeutic Benefits */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-display text-3xl md:text-4xl text-center text-foreground mb-6">
@@ -114,7 +114,7 @@ export default function About() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-muted/50 rounded-xl p-6">
                   <h3 className="font-semibold text-lg mb-2">Stress Relief</h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-base">
                     Creating art is meditative. It helps you disconnect from daily stress 
                     and find peace in the present moment.
                   </p>
@@ -122,7 +122,7 @@ export default function About() {
 
                 <div className="bg-muted/50 rounded-xl p-6">
                   <h3 className="font-semibold text-lg mb-2">Sense of Achievement</h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-base">
                     There's nothing quite like the pride of creating something beautiful 
                     with your own hands.
                   </p>
@@ -130,7 +130,7 @@ export default function About() {
 
                 <div className="bg-muted/50 rounded-xl p-6">
                   <h3 className="font-semibold text-lg mb-2">Screen-Free Time</h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-base">
                     Give your eyes and mind a break from screens while engaging 
                     in a fulfilling creative activity.
                   </p>
@@ -138,7 +138,7 @@ export default function About() {
 
                 <div className="bg-muted/50 rounded-xl p-6">
                   <h3 className="font-semibold text-lg mb-2">Personal Expression</h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-base">
                     Each piece you create is uniquely yours—a reflection of your 
                     creativity and personal style.
                   </p>

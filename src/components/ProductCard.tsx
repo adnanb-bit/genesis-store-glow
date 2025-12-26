@@ -63,7 +63,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <h3 className="font-semibold text-lg mb-1 group-hover:text-primary transition-colors line-clamp-1">
           {node.title}
         </h3>
-        <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{node.description}</p>
+        <p className="text-muted-foreground text-base mb-3 line-clamp-2">{node.description}</p>
 
         <div className="flex items-center justify-between">
           <span className="font-bold text-lg text-primary">

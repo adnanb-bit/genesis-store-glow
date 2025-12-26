@@ -21,7 +21,7 @@ export default function Gallery() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-peach/30 to-background py-16 md:py-24">
+        <section className="bg-gradient-to-br from-peach/30 to-background py-12 md:py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-display text-4xl md:text-6xl text-primary mb-6">
               Customer Creations
@@ -37,7 +37,7 @@ export default function Gallery() {
         </section>
 
         {/* Gallery Grid */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {creations.map((creation) => (
@@ -46,14 +46,14 @@ export default function Gallery() {
                   className="aspect-square bg-muted/50 rounded-xl flex flex-col items-center justify-center text-muted-foreground border-2 border-dashed border-border"
                 >
                   <Camera className="h-12 w-12 mb-4 opacity-50" />
-                  <p className="text-sm">Customer creation</p>
-                  <p className="text-xs opacity-70">Coming soon</p>
+                  <p className="text-base">Customer creation</p>
+                  <p className="text-sm opacity-70">Coming soon</p>
                 </div>
               ))}
             </div>
 
             <div className="text-center mt-12">
-              <p className="text-muted-foreground mb-4">
+              <p className="text-muted-foreground text-base mb-4">
                 Created something beautiful? Share it with us!
               </p>
               <Button>
@@ -65,12 +65,12 @@ export default function Gallery() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4 text-center">
             <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
               Ready to Create Your Masterpiece?
             </h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+            <p className="text-muted-foreground text-base mb-8 max-w-xl mx-auto">
               Pick a kit, follow along with our tutorials, and create art you'll be proud to display.
             </p>
             <Button asChild size="lg">
