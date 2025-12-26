@@ -30,7 +30,7 @@ export default function Index() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-peach/50 via-background to-muted py-20 md:py-32 overflow-hidden">
           <div className="container mx-auto px-4">
