@@ -42,7 +42,7 @@ const ComingSoon = () => {
         <img 
           src={bulbulLogo} 
           alt="BulBul Logo" 
-          className="h-64 md:h-80 mb-6 drop-shadow-lg"
+          className="h-64 md:h-80 mb-2 drop-shadow-lg"
         />
 
         {/* Brand name and tagline */}
