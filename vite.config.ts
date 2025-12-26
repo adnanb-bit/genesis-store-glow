@@ -5,7 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/genesis-store-glow/",
+  // Use repo subpath only for GitHub Pages builds; keep / for dev/preview
+  base: mode === "production" ? "/genesis-store-glow/" : "/",
   server: {
     host: "::",
     port: 8080,
