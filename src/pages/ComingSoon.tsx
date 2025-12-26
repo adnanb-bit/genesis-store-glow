@@ -42,7 +42,7 @@ const ComingSoon = () => {
         <img 
           src={bulbulLogo} 
           alt="BulBul Logo" 
-          className="h-32 md:h-40 mb-6 drop-shadow-lg"
+          className="h-64 md:h-80 mb-6 drop-shadow-lg"
         />
 
         {/* Brand name and tagline */}
@@ -59,7 +59,7 @@ const ComingSoon = () => {
         </h2>
 
         <p className="text-lg md:text-xl text-muted-foreground font-body leading-relaxed mb-4 max-w-lg">
-          We are buzzing with excitement as we prepare beautiful DIY art kits just for you. 
+          Our creative workshop is buzzing with excitement as we prepare beautiful DIY art kits just for you. 
           Soon you'll be able to make it, love it, and show it off!
         </p>
 
