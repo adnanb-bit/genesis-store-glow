@@ -1,14 +1,88 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { Instagram } from "lucide-react";
 import bulbulLogo from "@/assets/bulbul-logo.svg";
 
+interface Ball {
+  id: number;
+  x: number;
+  y: number;
+  baseX: number;
+  baseY: number;
+  size: number;
+  color: string;
+  delay: number;
+}
+
 const ComingSoon = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [balls, setBalls] = useState<Ball[]>([]);
+  const containerRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
+
+  // Initialize balls with their positions
+  useEffect(() => {
+    const initialBalls: Ball[] = [
+      { id: 1, x: 0, y: 0, baseX: 10, baseY: 5, size: 64, color: "bg-primary/20", delay: 0 },
+      { id: 2, x: 0, y: 0, baseX: 85, baseY: 10, size: 48, color: "bg-secondary/30", delay: 1 },
+      { id: 3, x: 0, y: 0, baseX: 8, baseY: 75, size: 80, color: "bg-accent/20", delay: 2 },
+      { id: 4, x: 0, y: 0, baseX: 88, baseY: 85, size: 56, color: "bg-primary/15", delay: 0.5 },
+      { id: 5, x: 0, y: 0, baseX: 25, baseY: 33, size: 32, color: "bg-secondary/25", delay: 1.5 },
+    ];
+    setBalls(initialBalls);
+  }, []);
+
+  // Track mouse/touch movement
+  useEffect(() => {
+    const handleMove = (clientX: number, clientY: number) => {
+      if (!containerRef.current) return;
+      const rect = containerRef.current.getBoundingClientRect();
+      setMousePos({
+        x: ((clientX - rect.left) / rect.width) * 100,
+        y: ((clientY - rect.top) / rect.height) * 100,
+      });
+    };
+
+    const handleMouseMove = (e: MouseEvent) => handleMove(e.clientX, e.clientY);
+    const handleTouchMove = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        handleMove(e.touches[0].clientX, e.touches[0].clientY);
+      }
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchmove", handleTouchMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, []);
+
+  // Calculate ball positions based on mouse
+  const getBallStyle = (ball: Ball) => {
+    const dx = mousePos.x - ball.baseX;
+    const dy = mousePos.y - ball.baseY;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+    const maxDistance = 30;
+    const repelStrength = Math.max(0, 1 - distance / maxDistance) * 25;
+    
+    const offsetX = distance > 0 ? (-dx / distance) * repelStrength : 0;
+    const offsetY = distance > 0 ? (-dy / distance) * repelStrength : 0;
+
+    return {
+      left: `${ball.baseX + offsetX}%`,
+      top: `${ball.baseY + offsetY}%`,
+      width: ball.size,
+      height: ball.size,
+      transition: "left 0.1s ease-out, top 0.1s ease-out",
+      animationDelay: `${ball.delay}s`,
+    };
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -16,7 +90,6 @@ const ComingSoon = () => {
 
     setIsSubmitting(true);
     
-    // Simulate submission
     setTimeout(() => {
       toast({
         title: "You're on the list! 🎉",
@@ -28,13 +101,18 @@ const ComingSoon = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-peach/60 via-background to-peach/40 flex flex-col items-center justify-center px-4 py-6 relative overflow-hidden">
-      {/* Decorative floating elements */}
-      <div className="absolute top-20 left-10 w-16 h-16 rounded-full bg-primary/20 animate-float" style={{ animationDelay: "0s" }} />
-      <div className="absolute top-40 right-20 w-12 h-12 rounded-full bg-secondary/30 animate-float" style={{ animationDelay: "1s" }} />
-      <div className="absolute bottom-32 left-20 w-20 h-20 rounded-full bg-accent/20 animate-float" style={{ animationDelay: "2s" }} />
-      <div className="absolute bottom-20 right-10 w-14 h-14 rounded-full bg-primary/15 animate-float" style={{ animationDelay: "0.5s" }} />
-      <div className="absolute top-1/3 left-1/4 w-8 h-8 rounded-full bg-secondary/25 animate-float" style={{ animationDelay: "1.5s" }} />
+    <div 
+      ref={containerRef}
+      className="min-h-screen bg-gradient-to-br from-peach/60 via-background to-peach/40 flex flex-col items-center justify-center px-4 py-6 relative overflow-hidden"
+    >
+      {/* Interactive floating elements */}
+      {balls.map((ball) => (
+        <div
+          key={ball.id}
+          className={`absolute rounded-full ${ball.color} animate-float pointer-events-none`}
+          style={getBallStyle(ball)}
+        />
+      ))}
 
       {/* Main content */}
       <main className="relative z-10 flex flex-col items-center text-center max-w-2xl mx-auto animate-fade-in">
