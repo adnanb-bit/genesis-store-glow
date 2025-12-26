@@ -1,9 +1,9 @@
 /* Fonts loaded in index.html for non-render-blocking performance */
 
 @font-face {
-  font-family: 'Delius';
-  src: url('./fonts/Delius-Regular.ttf') format('truetype');
-  font-weight: 400;
+  font-family: 'Laila';
+  src: url('/fonts/Laila-SemiBold.ttf') format('truetype');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
