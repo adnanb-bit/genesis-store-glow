@@ -60,7 +60,7 @@ export default function FAQ() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-peach/30 to-background py-16 md:py-24">
+        <section className="bg-gradient-to-br from-peach/30 to-background py-12 md:py-16">
           <div className="container mx-auto px-4 text-center">
             <h1 className="font-display text-4xl md:text-6xl text-primary mb-6">
               Frequently Asked Questions
@@ -72,7 +72,7 @@ export default function FAQ() {
         </section>
 
         {/* FAQ List */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
@@ -85,7 +85,7 @@ export default function FAQ() {
                     <AccordionTrigger className="text-left font-semibold hover:text-primary">
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">
+                    <AccordionContent className="text-muted-foreground text-base">
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
@@ -96,12 +96,12 @@ export default function FAQ() {
         </section>
 
         {/* Contact CTA */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4 text-center">
             <h2 className="font-display text-3xl md:text-4xl text-foreground mb-4">
               Still Have Questions?
             </h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+            <p className="text-muted-foreground text-base mb-8 max-w-xl mx-auto">
               We're here to help! Reach out and we'll get back to you as soon as possible.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

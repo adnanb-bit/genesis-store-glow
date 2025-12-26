@@ -63,7 +63,7 @@ export default function Index() {
         </section>
 
         {/* Why DIY Section */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="font-heading text-3xl md:text-4xl text-center text-foreground mb-12">
               Why DIY with BulBul?
@@ -75,7 +75,7 @@ export default function Index() {
                   <Palette className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-semibold text-xl mb-2">Therapeutic & Fun</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-base">
                   Unwind and destress while creating something beautiful with your hands.
                 </p>
               </div>
@@ -85,7 +85,7 @@ export default function Index() {
                   <Heart className="h-8 w-8 text-secondary" />
                 </div>
                 <h3 className="font-semibold text-xl mb-2">Pride in Creating</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-base">
                   Experience the joy and satisfaction of making art you'll love.
                 </p>
               </div>
@@ -95,7 +95,7 @@ export default function Index() {
                   <Home className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-semibold text-xl mb-2">Beautiful Home Decor</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-base">
                   Create stunning pieces that add a personal touch to your space.
                 </p>
               </div>
@@ -104,7 +104,7 @@ export default function Index() {
         </section>
 
         {/* What's in a Kit Section */}
-        <section className="py-16 md:py-24 bg-muted/30">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl md:text-4xl text-center text-foreground mb-4">
@@ -121,7 +121,7 @@ export default function Index() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">All Materials Included</h3>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-muted-foreground text-base">
                       Quality supplies, brushes, paints, and everything you need to complete your project.
                     </p>
                   </div>
@@ -133,7 +133,7 @@ export default function Index() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Printed Tutorial Guide</h3>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-muted-foreground text-base">
                       Step-by-step instructions with helpful tips and techniques.
                     </p>
                   </div>
@@ -145,7 +145,7 @@ export default function Index() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Video Tutorial Access</h3>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-muted-foreground text-base">
                       Follow along with our detailed video guides at your own pace.
                     </p>
                   </div>
@@ -157,7 +157,7 @@ export default function Index() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Support & Community</h3>
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-muted-foreground text-base">
                       Join our community of creators and share your finished pieces!
                     </p>
                   </div>
@@ -168,7 +168,7 @@ export default function Index() {
         </section>
 
         {/* Featured Products */}
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between mb-12">
               <h2 className="font-heading text-3xl md:text-4xl text-foreground">
@@ -197,7 +197,7 @@ export default function Index() {
               <div className="text-center py-12 bg-muted/30 rounded-2xl">
                 <Palette className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">No products yet</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-base">
                   Tell me what DIY kits you'd like to sell and I'll add them!
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default function Index() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-primary to-secondary text-primary-foreground">
+        <section className="py-12 md:py-16 bg-gradient-to-r from-primary to-secondary text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
             <h2 className="font-heading text-3xl md:text-4xl mb-4">
               Ready to Start Creating?

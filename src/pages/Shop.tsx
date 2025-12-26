@@ -58,7 +58,7 @@ export default function Shop() {
               <div className="text-center py-20 bg-muted/30 rounded-2xl">
                 <Palette className="h-20 w-20 text-muted-foreground mx-auto mb-6" />
                 <h2 className="text-2xl font-semibold mb-3">No products found</h2>
-                <p className="text-muted-foreground max-w-md mx-auto">
+                <p className="text-muted-foreground text-base max-w-md mx-auto">
                   We're working on adding amazing DIY kits. Tell us what products you'd like to create!
                 </p>
               </div>
