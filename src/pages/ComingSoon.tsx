@@ -69,7 +69,7 @@ const ComingSoon = () => {
     const dy = mousePos.y - ball.baseY;
     const distance = Math.sqrt(dx * dx + dy * dy);
     const maxDistance = 30;
-    const repelStrength = Math.max(0, 1 - distance / maxDistance) * 25;
+    const repelStrength = Math.max(0, 1 - distance / maxDistance) * 20;
     
     const offsetX = distance > 0 ? (-dx / distance) * repelStrength : 0;
     const offsetY = distance > 0 ? (-dy / distance) * repelStrength : 0;
@@ -79,7 +79,7 @@ const ComingSoon = () => {
       top: `${ball.baseY + offsetY}%`,
       width: ball.size,
       height: ball.size,
-      transition: "left 0.1s ease-out, top 0.1s ease-out",
+      transition: "left 0.5s ease-out, top 0.5s ease-out",
       animationDelay: `${ball.delay}s`,
     };
   };
