@@ -59,7 +59,7 @@ const ComingSoon = () => {
         </h2>
 
         <p className="text-lg md:text-xl text-muted-foreground font-body leading-relaxed mb-4 max-w-lg">
-          Our creative workshop is buzzing with excitement as we prepare beautiful DIY art kits just for you. 
+          Our team is buzzing with excitement as we prepare beautiful DIY art kits just for you. 
           Soon you'll be able to make it, love it, and show it off!
         </p>
 
