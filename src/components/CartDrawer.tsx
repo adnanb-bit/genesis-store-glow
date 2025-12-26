@@ -101,20 +101,22 @@ export function CartDrawer() {
                           size="icon"
                           className="h-6 w-6 text-muted-foreground hover:text-destructive"
                           onClick={() => removeItem(item.variantId)}
+                          aria-label={`Remove ${item.product.node.title} from cart`}
                         >
                           <Trash2 className="h-3 w-3" />
                         </Button>
 
-                        <div className="flex items-center gap-1">
+                        <div className="flex items-center gap-1" role="group" aria-label={`Quantity controls for ${item.product.node.title}`}>
                           <Button
                             variant="outline"
                             size="icon"
                             className="h-7 w-7"
                             onClick={() => updateQuantity(item.variantId, item.quantity - 1)}
+                            aria-label={`Decrease quantity of ${item.product.node.title}`}
                           >
                             <Minus className="h-3 w-3" />
                           </Button>
-                          <span className="w-8 text-center text-sm font-medium">
+                          <span className="w-8 text-center text-sm font-medium" aria-live="polite">
                             {item.quantity}
                           </span>
                           <Button
@@ -122,6 +124,7 @@ export function CartDrawer() {
                             size="icon"
                             className="h-7 w-7"
                             onClick={() => updateQuantity(item.variantId, item.quantity + 1)}
+                            aria-label={`Increase quantity of ${item.product.node.title}`}
                           >
                             <Plus className="h-3 w-3" />
                           </Button>

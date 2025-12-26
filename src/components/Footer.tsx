@@ -48,19 +48,19 @@ export function Footer() {
             <h3 className="font-semibold text-lg mb-4">Connect</h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-background/80">
-                <Instagram className="h-4 w-4" />
-                <a href="#" className="hover:text-primary transition-colors">
+                <Instagram className="h-4 w-4" aria-hidden="true" />
+                <a href="https://instagram.com/bulbul.diy" className="hover:text-primary transition-colors" aria-label="Follow BulBul on Instagram @bulbul.diy">
                   @bulbul.diy
                 </a>
               </li>
               <li className="flex items-center gap-2 text-background/80">
-                <Mail className="h-4 w-4" />
-                <a href="mailto:hello@bulbul.pk" className="hover:text-primary transition-colors">
+                <Mail className="h-4 w-4" aria-hidden="true" />
+                <a href="mailto:hello@bulbul.pk" className="hover:text-primary transition-colors" aria-label="Email BulBul at hello@bulbul.pk">
                   hello@bulbul.pk
                 </a>
               </li>
               <li className="flex items-center gap-2 text-background/80">
-                <MapPin className="h-4 w-4" />
+                <MapPin className="h-4 w-4" aria-hidden="true" />
                 <span>Pakistan</span>
               </li>
             </ul>
