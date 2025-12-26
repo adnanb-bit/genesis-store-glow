@@ -28,7 +28,7 @@ const ComingSoon = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-peach/60 via-background to-peach/40 flex flex-col items-center justify-center px-4 py-12 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-peach/60 via-background to-peach/40 flex flex-col items-center justify-center px-4 py-6 relative overflow-hidden">
       {/* Decorative floating elements */}
       <div className="absolute top-20 left-10 w-16 h-16 rounded-full bg-primary/20 animate-float" style={{ animationDelay: "0s" }} />
       <div className="absolute top-40 right-20 w-12 h-12 rounded-full bg-secondary/30 animate-float" style={{ animationDelay: "1s" }} />
@@ -42,7 +42,7 @@ const ComingSoon = () => {
         <img 
           src={bulbulLogo} 
           alt="BulBul Logo" 
-          className="h-64 md:h-80 mb-2 drop-shadow-lg"
+          className="h-48 md:h-56 -mb-2 drop-shadow-lg"
         />
 
         {/* Brand name and tagline */}
